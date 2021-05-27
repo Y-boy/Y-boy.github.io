@@ -1,36 +1,33 @@
 # jemdoc: menu{MENU}{example.html}, nofooter  
-==example 
+= 本文档将介绍如何搭建 GitHub.io 博客，并部署基于 jemdoc 的学术风格博客
+[https://zhuanlan.zhihu.com/p/161087743 参考 - Jemdoc+Github.io +Mac搭建个人学术主页] \n
 
+== 提前准备
+- 安装 Python，用于执行 jemdoc.py 脚本
+
+== 搭建 GitHub 博客
+[https://blog.csdn.net/qq_34106574/article/details/82704883 参考 - 搭建自己的github.io博客] \n
+. 新建一个命名为 +{YOUR_NAME}.github.io+ 代码库
+. 进入 \"设置（setting）\" -> \"页面（Pages）\" 完成配置
+. 当页面显示 \"Your site is published at https://{YOUR_NAME}.github.io/\"时，便可直接访问该域名。
+
+== 编辑基于 jemdoc 的学术风格博客页面
+. 拉去仓库代码到本地，进入该项目目录f，准备编辑（原有的文件都可以删掉）
+. 从 [http://jemdoc.jaboc.net/index.html jemdoc 官网] 下载[http://jemdoc.jaboc.net/dist/jemdoc.py jemdoc.py]和[http://jemdoc.jaboc.net/dist/jemdoc.css jemdoc.css]两个文件，存到项目目录下
+. 创建空的模板文件 +index.jemdoc+，按照[index.html Demo页面]或[http://jemdoc.jaboc.net/example.html 教程]的案例编辑内容
+. 执行命令+\# python jemdoc.py index.jemdoc+，将编译得到最终使用的+html+文件（每次更新了+.jemdoc+文件后都要执行一次该命令以刷新+html+文件）
+. 将更新的文件提交到 GitHub 仓库上，重新访问博客页面 （https://{YOUR_NAME}.github.io）
+
+== 附：一些细节
+=== 关于图片
+在项目目录下创建 +/pictures+ 目录，存放所有图片，上传至 GitHub 仓库之后可以查看该图片的 URL，之后再写到文档模板中，可参考[https://github.com/Y-boy/Y-boy.github.io/blob/master/example.jemdoc 示例模板]中关于插入图片的语句。\n
+
+=== 关于菜单
+. 创建空的菜单文件 +MENU+ ，编辑内容如下
 ~~~
-{}{img_left}{pictures/portrait.jpg}{alt text}{131}{160}{https://raw.githubusercontent.com/Y-boy/Y-boy.github.io/master/}
-PhD,\n [http://www.kth.se/ees/omskolan/organisation/avdelningar/ac?l=en_UK Automatic Control Department], \n[http://www.kth.se Royal Institute of Technology (KTH)]\n
-Osquldas v\&aumlg 10 \n
-100 44 Stockholm, Sweden \n 
-Phone: \+46 8 790 7000 \n
-Fax: \+46 8 790 7329\n
-E-post: /euhanna/ \[@\] kth \[DOT\] se
+menu 1
+  home      [index.html]
+  about me  [me.html]
+menu 2 ...
 ~~~
-
-== About me
-I received the B.S. and M.Sc. degrees in computer engineering from Iran University of Science and Technology ([http://www.iust.ac.ir IUST]), and the [http://ece.ut.ac.ir/ University of Tehran], Iran, in 2005 and 2008, respectively. In April 2015, I received the PhD degree in Telecommunications under the supervision of 
- [http://www.people.kth.se/~mikaelj/ Prof. Mikael Johansson] and  [http://www.people.kth.se/~carlofi/ Prof. Carlo Fischione] at [http:www.kth.se KTH].  
-
-== Research
-My research interests include 
-- Convex Optimisation  
-- Distributed Algorithms
-- Real-time Sensor Networking
-- Wireless Networks
-- Machine Learning
-
-[research.html Find out more].
-=== Recent Publications 
-. E. Ghadimi, H. R. Feyzmahdavian, and M. Johansson, \"Global convergence of the heavy-ball method for convex optimization\",  In ECC'15: European Control Conference, 2015.
-. E. Ghadimi, A. Teixeira, I. Shames, and M. Johansson \" Optimal parameter selection for the alternating direction method of
-multipliers (ADMM): quadratic problems \", IEEE Transactions on Automatic Control, 2015. \[[http://arxiv.org/abs/1306.2454 arxiv]\]
-. E. Ghadimi, A. Teixeira, M. Rabbat, and M. Johansson, \"The ADMM algorithm for distributed averaging: Convergence rates and optimal parameter selection\", In Proceedings of the 48th Asilomar Conference on Signals, Systems and Computers, 2014. \[[https://www.dropbox.com/s/k9izxz1m39yvvuz/admm_distributed_aveg.pdf?dl=0 pdf] \]
-. E. Ghadimi, O. Landsiedel, P. Soldati, S. Duquennoy, and M. Johansson, \"Opportunistic Routing in Low Duty-Cycle Wireless Sensor Networks\", ACM Transactions on Senor Networks, 2014. \[[pub/oppTOSN.pdf pdf]\]
-
-[publications.html Full list of publications].
-\n
-[cv.pdf A brief cv].
+. 在需要关联菜单的 +.jemdoc+ 模板文件上，首行使用语句 +jemdoc: menu{MENU} {CURRENT_FILE_NAME.html}+ ，表示在所生成的 +html+文件中附上菜单

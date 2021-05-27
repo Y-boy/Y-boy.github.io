@@ -5,7 +5,7 @@
 <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>example </title>
+<title>本文档将介绍如何搭建 GitHub.io 博客，并部署基于 jemdoc 的学术风格博客</title>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -13,56 +13,58 @@
 <td id="layout-menu">
 <div class="menu-category">Menu</div>
 <div class="menu-item"><a href="index.html">Home&nbsp;-&nbsp;demo</a></div>
-<div class="menu-item"><a href="example.html" class="current">Deploy&nbsp;jemdoc&nbsp;in&nbsp;GitHub.io</a></div>
+<div class="menu-item"><a href="example.html" class="current">Deployment</a></div>
 <div class="menu-category">Links</div>
 <div class="menu-item"><a href="http://jemdoc.jaboc.net/">Jemdoc</a></div>
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>example </h1>
+<h1>本文档将介绍如何搭建 GitHub.io 博客，并部署基于 jemdoc 的学术风格博客</h1>
+<div id="subtitle"><a href="https://zhuanlan.zhihu.com/p/161087743">参考 - Jemdoc<tt>Github.io </tt>Mac搭建个人学术主页</a> <br /></div>
 </div>
-<table class="imgtable"><tr><td>
-<a href="https://raw.githubusercontent.com/Y-boy/Y-boy.github.io/master/"><img src="pictures/portrait.jpg" alt="alt text" width="131px" height="160px" /></a>&nbsp;</td>
-<td align="left"><p>PhD,<br /> <a href="http://www.kth.se/ees/omskolan/organisation/avdelningar/ac?l=en_UK">Automatic Control Department</a>, <br /><a href="http://www.kth.se">Royal Institute of Technology (KTH)</a><br />
-Osquldas v&aumlg 10 <br />
-100 44 Stockholm, Sweden <br /> 
-Phone: +46 8 790 7000 <br />
-Fax: +46 8 790 7329<br />
-E-post: <i>euhanna</i> [@] kth [DOT] se</p>
-</td></tr></table>
-<h2>About me</h2>
-<p>I received the B.S. and M.Sc. degrees in computer engineering from Iran University of Science and Technology (<a href="http://www.iust.ac.ir">IUST</a>), and the <a href="http://ece.ut.ac.ir/">University of Tehran</a>, Iran, in 2005 and 2008, respectively. In April 2015, I received the PhD degree in Telecommunications under the supervision of 
-<a href="http://www.people.kth.se/~mikaelj/">Prof. Mikael Johansson</a> and  <a href="http://www.people.kth.se/~carlofi/">Prof. Carlo Fischione</a> at <a href="http:www.kth.se">KTH</a>.  </p>
-<h2>Research</h2>
-<p>My research interests include </p>
+<h2>提前准备</h2>
 <ul>
-<li><p>Convex Optimisation  </p>
-</li>
-<li><p>Distributed Algorithms</p>
-</li>
-<li><p>Real-time Sensor Networking</p>
-</li>
-<li><p>Wireless Networks</p>
-</li>
-<li><p>Machine Learning</p>
+<li><p>安装 Python，用于执行 jemdoc.py 脚本</p>
 </li>
 </ul>
-<p><a href="research.html">Find out more</a>.</p>
-<h3>Recent Publications </h3>
+<h2>搭建 GitHub 博客</h2>
+<p><a href="https://blog.csdn.net/qq_34106574/article/details/82704883">参考 - 搭建自己的github.io博客</a> <br /></p>
 <ol>
-<li><p>E. Ghadimi, H. R. Feyzmahdavian, and M. Johansson, "Global convergence of the heavy-ball method for convex optimization",  In ECC&rsquo;15: European Control Conference, 2015.</p>
+<li><p>新建一个命名为 <tt>{YOUR_NAME}.github.io</tt> 代码库</p>
 </li>
-<li><p>E. Ghadimi, A. Teixeira, I. Shames, and M. Johansson " Optimal parameter selection for the alternating direction method of
-multipliers (ADMM): quadratic problems ", IEEE Transactions on Automatic Control, 2015. [<a href="http://arxiv.org/abs/1306.2454">arxiv</a>]</p>
+<li><p>进入 "设置（setting）" -&gt; "页面（Pages）" 完成配置</p>
 </li>
-<li><p>E. Ghadimi, A. Teixeira, M. Rabbat, and M. Johansson, "The ADMM algorithm for distributed averaging: Convergence rates and optimal parameter selection", In Proceedings of the 48th Asilomar Conference on Signals, Systems and Computers, 2014. [<a href="https://www.dropbox.com/s/k9izxz1m39yvvuz/admm_distributed_aveg.pdf?dl=0">pdf</a> ]</p>
-</li>
-<li><p>E. Ghadimi, O. Landsiedel, P. Soldati, S. Duquennoy, and M. Johansson, "Opportunistic Routing in Low Duty-Cycle Wireless Sensor Networks", ACM Transactions on Senor Networks, 2014. [<a href="pub/oppTOSN.pdf">pdf</a>]</p>
+<li><p>当页面显示 "Your site is published at https:<i></i>{YOUR_NAME}.github.io/"时，便可直接访问该域名。</p>
 </li>
 </ol>
-<p><a href="publications.html">Full list of publications</a>.
-<br />
-<a href="cv.pdf">A brief cv</a>.</p>
+<h2>编辑基于 jemdoc 的学术风格博客页面</h2>
+<ol>
+<li><p>拉去仓库代码到本地，进入该项目目录f，准备编辑（原有的文件都可以删掉）</p>
+</li>
+<li><p>从 <a href="http://jemdoc.jaboc.net/index.html">jemdoc 官网</a> 下载<a href="http://jemdoc.jaboc.net/dist/jemdoc.py">jemdoc.py</a>和<a href="http://jemdoc.jaboc.net/dist/jemdoc.css">jemdoc.css</a>两个文件，存到项目目录下</p>
+</li>
+<li><p>创建空的模板文件 <tt>index.jemdoc</tt>，按照<a href="index.html">Demo页面</a>或<a href="http://jemdoc.jaboc.net/example.html">教程</a>的案例编辑内容</p>
+</li>
+<li><p>执行命令<tt># python jemdoc.py index.jemdoc</tt>，将编译得到最终使用的<tt>html</tt>文件（每次更新了<tt>.jemdoc</tt>文件后都要执行一次该命令以刷新<tt>html</tt>文件）</p>
+</li>
+<li><p>将更新的文件提交到 GitHub 仓库上，重新访问博客页面 （https:<i></i>{YOUR_NAME}.github.io）</p>
+</li>
+</ol>
+<h2>附：一些细节</h2>
+<h3>关于图片</h3>
+<p>在项目目录下创建 <tt>/pictures</tt> 目录，存放所有图片，上传至 GitHub 仓库之后可以查看该图片的 URL，之后再写到文档模板中，可参考<a href="https://github.com/Y-boy/Y-boy.github.io/blob/master/example.jemdoc">示例模板</a>中关于插入图片的语句。<br /></p>
+<h3>关于菜单</h3>
+<ol>
+<li><p>创建空的菜单文件 <tt>MENU</tt> ，编辑内容如下</p>
+</li>
+</ol>
+<div class="infoblock">
+<div class="blockcontent">
+<p>menu 1
+home      <a href="index.html">index.html</a>
+about me  <a href="me.html">me.html</a>
+menu 2 &hellip;</p>
+</div></div>
 </td>
 </tr>
 </table>

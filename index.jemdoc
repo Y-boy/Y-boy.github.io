@@ -1,16 +1,16 @@
 # jemdoc: menu{MENU}{index.html}, nofooter  
-==Name（这行字会显示在网页标签页）
+==Name（这行字同时还会显示在网页标签页）
 
 ~~~
 {}{img_left}{pictures/portrait.jpg}{alt text}{160}{160}{https://raw.githubusercontent.com/Y-boy/Y-boy.github.io/master/}
 PhD,\n
-College of Computer,
+College of Computer, \n
 [https://english.nudt.edu.cn/ National University of Defense Technology (NUDT)], \n
-Deya Road, Kaifu District,\n
-Changsha City, Hunan Province, P.R. China.\n
-Phone: +86 XXX-XXXX-XXXX
-E-mail: XXX@nudt.edu.com
-Github Page: [http://y-boy.github.io y-boy.github.io]
+Deya Road, Kaifu District, \n
+Changsha City, Hunan Province, P.R. China. \n
+Phone: +86 XXX-XXXX-XXXX \n
+E-mail: XXX@nudt.edu.com \n
+Github Page: [http://y-boy.github.io y-boy.github.io] \n
 ~~~
 
 == Bio
@@ -18,8 +18,8 @@ Github Page: [http://y-boy.github.io y-boy.github.io]
 
 == Background
 （杠\"-\"表示符号序列）
-- \[2015/09 - 2019/06] 经历一
-- \[2019/09 - 2021/06] 经历二
+- \[ 2015\/09 - 2019\/06 ] 经历一
+- \[ 2019\/09 - 2021\/06 ] 经历二
 
 == Publications 
 （点\".\"表示序号序列）
