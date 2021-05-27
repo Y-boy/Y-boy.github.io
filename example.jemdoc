@@ -28,10 +28,12 @@
 === 关于菜单
 . 创建空的菜单文件 +MENU+ ，编辑内容如下
 ~~~
-menu 1 \n
-\t home \t \[index.html\] \n
-\t about me \t \[me.html\] \n
-menu 2 ...
+{}{}
+menu 1
+  home      [index.html]
+  about me  [me.html]
+menu 2 
+  link      [http://jemdoc.jaboc.net/]
 ~~~
 . 在需要关联菜单的 +.jemdoc+ 模板文件上，首行使用语句 +jemdoc: menu{MENU} {CURRENT_FILE_NAME.html}+ ，表示在所生成的 +html+文件中附上菜单
 

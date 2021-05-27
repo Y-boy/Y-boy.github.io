@@ -60,13 +60,18 @@
 <li><p>创建空的菜单文件 <tt>MENU</tt> ，编辑内容如下</p>
 </li>
 </ol>
-<div class="infoblock">
-<div class="blockcontent">
-<p>menu 1 <br />
-t home t [index.html] <br />
-t about me t [me.html] <br />
-menu 2 &hellip;</p>
-</div></div>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+menu 1
+  home      [index.html]
+  about me  [me.html]
+menu 2
+  link      [http://jemdoc.jaboc.net/]
+</pre></div></div>
+<ol>
+<li><p>在需要关联菜单的 <tt>.jemdoc</tt> 模板文件上，首行使用语句 <tt>jemdoc: menu{MENU} {CURRENT_FILE_NAME.html}</tt> ，表示在所生成的 <tt>html</tt>文件中附上菜单</p>
+</li>
+</ol>
 <h3>关于网络</h3>
 <p>建议在科学上网的条件下访问 GitHub </p>
 </td>
