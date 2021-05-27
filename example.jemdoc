@@ -1,5 +1,8 @@
-# jemdoc: menu{MENU}{example.html}, nofooter  
-= 本文档将介绍如何搭建 GitHub.io 博客，并部署基于 jemdoc 的学术风格博客
+# jemdoc: menu{MENU}{example.html}, nofooter 
+= 部署文档
+
+== 本文档将介绍如何搭建 GitHub.io 博客，并部署基于 jemdoc 的学术风格博客
+ [https://github.com/Y-boy/Y-boy.github.io 博客项目代码]
  [https://zhuanlan.zhihu.com/p/161087743 \[参考 - Jemdoc \+ Github.io \+ Mac搭建个人学术主页\]] \n
 
 == 提前准备
