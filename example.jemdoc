@@ -2,14 +2,14 @@
 = 部署文档
 
 == 本文档将介绍如何搭建 GitHub.io 博客，并部署基于 jemdoc 的学术风格博客
- [https://github.com/Y-boy/Y-boy.github.io 博客项目代码]
- [https://zhuanlan.zhihu.com/p/161087743 \[参考 - Jemdoc \+ Github.io \+ Mac搭建个人学术主页\]] \n
+ [https://github.com/Y-boy/Y-boy.github.io 博客项目代码] \n
+ [https://zhuanlan.zhihu.com/p/161087743 \[参考，知乎 - Jemdoc \+ Github.io \+ Mac搭建个人学术主页\]] \n
 
 == 提前准备
 - 安装 Python，用于执行 jemdoc.py 脚本
 
 == 搭建 GitHub 博客
- [https://blog.csdn.net/qq_34106574/article/details/82704883 \[参考 - 搭建自己的github.io博客\]] \n
+ [https://blog.csdn.net/qq_34106574/article/details/82704883 \[参考，CSDN - 搭建自己的github.io博客\]] \n
 . 新建一个命名为 +{YOUR_NAME}.github.io+ 代码库
 . 进入 \"设置（setting）\" -> \"页面（Pages）\" 完成配置
 . 当页面显示 +\"Your site is published at https://{YOUR_NAME}.github.io/\"+ 时，便可直接访问该域名。
@@ -19,7 +19,7 @@
 . 从 [http://jemdoc.jaboc.net/index.html jemdoc 官网] 下载 [http://jemdoc.jaboc.net/dist/jemdoc.py jemdoc.py] 和 [http://jemdoc.jaboc.net/dist/jemdoc.css jemdoc.css] 两个文件，存到项目目录下
 . 创建空的模板文件 +index.jemdoc+，按照[https://github.com/Y-boy/Y-boy.github.io/blob/master/example.jemdoc 示例模板]或[http://jemdoc.jaboc.net/example.html 教程]的案例编辑内容
 . 执行命令 +\# python jemdoc.py index.jemdoc+，将编译得到最终使用的 +html+ 文件（每次更新了 +.jemdoc+ 模板文件后都要执行一次该命令以刷新 +html+ 文件）
-. 将更新的文件提交到 GitHub 仓库上，重新访问博客页面 （https://{YOUR_NAME}.github.io）
+. 将更新的文件提交到 GitHub 仓库上，重新访问博客页面 （+https://{YOUR_NAME}.github.io+）
 
 == 附：一些细节
 === 关于图片
