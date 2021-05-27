@@ -26,7 +26,7 @@
 在项目目录下创建 +/pictures+ 目录，用于存放所有图片，当图片上传至 GitHub 仓库之后可以查看该图片的 URL，之后再写到文档模板中，可参考[https://github.com/Y-boy/Y-boy.github.io/blob/master/example.jemdoc 示例模板]中关于插入图片的语句。\n
 
 === 关于菜单
-. 创建空的菜单文件 +MENU+ ，编辑内容如下
+- 创建空的菜单文件 +MENU+ ，编辑内容如下
 ~~~
 {}{}
 menu 1
@@ -35,7 +35,7 @@ menu 1
 menu 2 
   link      [http://jemdoc.jaboc.net/]
 ~~~
-. 在需要关联菜单的 +.jemdoc+ 模板文件上，首行使用语句 +jemdoc: menu{MENU} {CURRENT_FILE_NAME.html}+ ，表示在所生成的 +html+文件中附上菜单
+- 在需要关联菜单的 +.jemdoc+ 模板文件上，首行使用语句 +jemdoc: menu{MENU} {CURRENT_FILE_NAME.html}+ ，表示在所生成的 +html+文件中附上菜单
 
 === 关于网络
 建议在科学上网的条件下访问 GitHub \n
