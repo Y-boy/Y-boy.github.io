@@ -18,7 +18,7 @@
 . 拉取仓库代码到本地，进入该项目目录，准备编辑（原来的初始化仓库时生成的文件都可以删掉）
 . 从 [http://jemdoc.jaboc.net/index.html jemdoc 官网] 下载 [http://jemdoc.jaboc.net/dist/jemdoc.py jemdoc.py] 和 [http://jemdoc.jaboc.net/dist/jemdoc.css jemdoc.css] 两个文件，存到项目目录下
 . 创建空的模板文件 +index.jemdoc+，按照[https://github.com/Y-boy/Y-boy.github.io/blob/master/example.jemdoc 示例模板]或[http://jemdoc.jaboc.net/example.html 教程]的案例编辑内容
-. 执行命令 +\# python jemdoc.py index.jemdoc+，将编译得到最终使用的 +html+ 文件（每次更新了 +.jemdoc+ 模板文件后都要执行一次该命令以刷新 +html+ 文件）
+. 执行命令 +\# python2 jemdoc.py index.jemdoc+，将编译得到最终使用的 +html+ 文件（每次更新了 +.jemdoc+ 模板文件后都要执行一次该命令以刷新 +html+ 文件）
 . 将更新的文件提交到 GitHub 仓库上，重新访问博客页面 （+https://{YOUR_NAME}.github.io+）
 
 == 附：一些细节
