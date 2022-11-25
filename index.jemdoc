@@ -1,27 +1,22 @@
 # jemdoc: menu{MENU}{index.html}, nofooter  
-==Name（这行字同时还会显示在网页标签页）
+==杨柏蔼
 
 ~~~
 {}{img_left}{pictures/portrait.jpg}{alt text}{160}{160}{https://raw.githubusercontent.com/Y-boy/Y-boy.github.io/master/}
 PhD,\n
-College of Computer, \n
-[https://english.nudt.edu.cn/ National University of Defense Technology (NUDT)], \n
-Deya Road, Kaifu District, \n
-Changsha City, Hunan Province, P.R. China. \n
-Phone: +86 XXX-XXXX-XXXX \n
-E-mail: XXX@nudt.edu.com \n
-Github Page: [http://y-boy.github.io y-boy.github.io] \n
+[http://design.hnu.edu.cn/ 湖南大学设计艺术学院], \n
+E-mail(edu): yangboai@hnu.edu.com \n
+E-mail(gmail): yangboai0422@gmail.com \n
+Github: [https://github.com/Y-boy Y-boy] \n
 ~~~
 
-== Bio
-（*文字加粗*、/文字斜体/、+文字高亮+）
+== 履历
+- \[ 2012\/09 - 2016\/06 ] 杭州电子科技大学-计算机科学与技术-学士
+- \[ 2016\/09 - 2018\/06 ] 华南师范大学-软件工程-硕士
+- \[ 2018\/08 - 2019\/11 ] 华为技术有限公司-云服务开发工程师
+- [ 2021\/09 - now ] 湖南大学-艺术学-博士生
 
-== Background
-（杠\"-\"表示符号序列）
-- \[ 2015\/09 - 2019\/06 ] 经历一
-- \[ 2019\/09 - 2021\/06 ] 经历二
-
-== Publications 
-（点\".\"表示序号序列）
-. 文献一
-. 文献二
+== 攻读博士期间成果
+. Wu J, *Yang B*, Liu Y, et al. CLEC: Combination Locality Based Erasure Code for Permissioned Blockchain Storage[J]. CMC-COMPUTERS MATERIALS & CONTINUA, 2022, 73(3): 5137-5150.
+. Liu Y, *Yang B*, Wu J, et al. HotLT: LT Code-Based Secure and Reliable Consortium Blockchain Storage Systems[C]//International Conference on Artificial Intelligence and Security. Springer, Cham, 2022: 378-391.
+. *杨柏蔼*,赵山,刘芳.无服务器计算技术研究综述[J].计算机工程与科学,2022,44(04):611-619.

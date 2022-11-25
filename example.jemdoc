@@ -37,5 +37,5 @@ menu 2
 ~~~
 - 在需要关联菜单的 +.jemdoc+ 模板文件上，首行使用语句 +jemdoc: menu{MENU} {CURRENT_FILE_NAME.html}+ ，表示在所生成的 +html+文件中附上菜单
 
-=== 关于网络
-建议在科学上网的条件下访问 GitHub \n
+=== 格式
+（*文字加粗*、/文字斜体/、+文字高亮+） \n
